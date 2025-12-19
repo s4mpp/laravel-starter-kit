@@ -24,3 +24,5 @@ Homestead.yaml
 Thumbs.db
 coverage-html
 coverage-unique
+database/database.sqlite
+coverage-result-vscode-extension

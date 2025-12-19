@@ -12,12 +12,12 @@
             <directory>tests/Feature</directory>
         </testsuite>
     </testsuites>
-    <coverage disableCodeCoverageIgnore="false">
+    <coverage>
         <report >
         <html
             outputDirectory="coverage-html"
-            lowUpperBound="30"
-            highLowerBound="90" />
+            lowUpperBound="33"
+            highLowerBound="66" />
         </report>
     </coverage>
     <source>
