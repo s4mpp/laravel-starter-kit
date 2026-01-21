@@ -93,20 +93,12 @@
             "@php artisan migrate --graceful --ansi",
             "npm install",
             "npm run build",
+            "git init && git add . && git commit -m 'Initial commit'",
             "@php artisan optimize:clear",
             "@php artisan serve"
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
-        ],
-        "pint": [
-            "vendor/bin/pint app"
-        ],
-        "rector": [
-            "vendor/bin/rector"
-        ],
-        "phpstan": [
-            "vendor/bin/phpstan"
         ]
     },
     "extra": {
