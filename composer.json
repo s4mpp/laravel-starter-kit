@@ -62,6 +62,7 @@
         }
     },
     "scripts": {
+        "serve": "php artisan serve",
         "fix": "echo 'RECTOR...'; vendor/bin/rector && echo 'PINT...'; vendor/bin/pint app && echo 'PHPSTAN...'; vendor/bin/phpstan  --level=6 && echo 'TESTS...'; php artisan test --compact --coverage",
         "setup": [
             "composer install",

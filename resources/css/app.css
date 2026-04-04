@@ -6,6 +6,8 @@
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
+@source '../../vendor/s4mpp/blix-ui/views/*.blade.php';
+@source '../../vendor/s4mpp/backline/views/*.blade.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
@@ -14,3 +16,34 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+@layer base {
+    .backline-input,
+    .form-input {
+        @apply rounded-lg border-gray-300 bg-white text-gray-800
+            placeholder:text-gray-400
+           
+    }
+
+    .backline-btn,
+    .btn {
+        @apply rounded-lg text-white border-transparent
+            hover:bg-blue-400;
+    }
+
+    .btn.btn-primary,
+    .backline-btn-primary {
+        @apply bg-blue-500 hover:bg-blue-400
+            
+    }
+
+    .form-input,
+    .backline-input,
+    .btn.btn-primary
+    .btn.btn-default {
+        @apply focus:border-blue-400 focus:ring-3 focus:ring-blue-500/25 transition duration-150 ease-in-out;;
+    }
+
+    .btn-default {
+        @apply bg-white border-gray-300 text-gray-700 hover:bg-gray-100
+    }
+}
