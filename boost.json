@@ -3,8 +3,11 @@
         "claude_code"
     ],
     "editors": [
-        "claude_code",
-        "vscode"
+        "claude_code"
     ],
-    "guidelines": []
+    "guidelines": [
+        "s4mpp/backline",
+        "s4mpp/blix-ui",
+        "s4mpp/laravel-auth-suite"
+    ]
 }
