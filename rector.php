@@ -1,13 +1,12 @@
 <?php
 
-declare(strict_types=1);
-
-use Rector\Config\RectorConfig;
-use Rector\CodeQuality\Rector\If_\ExplicitBoolCompareRector;
-use Rector\Strict\Rector\Empty_\DisallowedEmptyRuleFixerRector;
 use Rector\CodeQuality\Rector\FuncCall\CompactToVariablesRector;
-use Rector\DeadCode\Rector\Property\RemoveUnusedPrivatePropertyRector;
 use Rector\CodeQuality\Rector\Identical\FlipTypeControlToUseExclusiveTypeRector;
+use Rector\CodeQuality\Rector\If_\ExplicitBoolCompareRector;
+use Rector\Config\RectorConfig;
+use Rector\DeadCode\Rector\Property\RemoveUnusedPrivatePropertyRector;
+use Rector\Strict\Rector\Empty_\DisallowedEmptyRuleFixerRector;
+use Rector\TypeDeclaration\Rector\StmtsAwareInterface\SafeDeclareStrictTypesRector;
 
 return RectorConfig::configure()
     ->withPaths([
@@ -19,7 +18,8 @@ return RectorConfig::configure()
         CompactToVariablesRector::class,
         FlipTypeControlToUseExclusiveTypeRector::class,
         ExplicitBoolCompareRector::class,
-        DisallowedEmptyRuleFixerRector::class
+        DisallowedEmptyRuleFixerRector::class,
+        SafeDeclareStrictTypesRector::class
     ])
     ->withPreparedSets(
         deadCode: true,
