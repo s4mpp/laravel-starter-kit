@@ -91,6 +91,7 @@
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi",
             "composer install",
+            "composer update",
             "@php artisan boost:update --ansi",
             "npm install",
             "npm run build",
