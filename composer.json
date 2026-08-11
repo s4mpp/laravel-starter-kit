@@ -45,14 +45,12 @@
         "setup": [
             "composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "@php artisan key:generate --ansi",
-            "@php artisan migrate --graceful --ansi",
-            "composer update",
-            "@php artisan boost:update --ansi",
+            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php -r \"file_exists('database/database-test.sqlite') || touch('database/database-test.sqlite');\"",
+            "@php artisan key:generate",
+            "@php artisan migrate --force",
             "npm install",
-            "npm run build",
-            "git init && git add . && git commit -m 'Initial commit'",
-            "@php artisan optimize:clear"
+            "npm run build"
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
