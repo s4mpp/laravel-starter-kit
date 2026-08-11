@@ -5,9 +5,5 @@
     "editors": [
         "claude_code"
     ],
-    "guidelines": [
-        "s4mpp/backline",
-        "s4mpp/blix-ui",
-        "s4mpp/laravel-auth-suite"
-    ]
+    "guidelines": []
 }
