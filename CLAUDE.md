@@ -1,9 +1,6 @@
-# s4mpp/laravel-starter-kit
+## Testes
 
-Base package to bootstrap new Laravel projects via `composer create-project s4mpp/laravel-starter-kit {name}`. This repo intentionally ships **core only**:
-
-- Laravel + dev tooling (Telescope, Pint, Rector, Larastan, Boost, Sail, Pail)
-- No admin panel, no auth package — not every project needs them
+Todos os testes devem usar `FastRefreshDatabase` (pacote `plannr/laravel-fast-refresh-database`), nunca o `RefreshDatabase` padrão do Laravel. A `tests/TestCase.php` já aplica o trait globalmente — não importe `RefreshDatabase` em classes de teste individuais.
 
 ## `composer create-project` flow
 
