@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abb5c757637b14886982e4cd98cfafba",
+    "content-hash": "048294b88f821e87f0185192c63ef136",
     "packages": [
         {
             "name": "brick/math",
@@ -3298,6 +3298,66 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.3"
             },
             "time": "2026-06-18T03:57:49+00:00"
+        },
+        {
+            "name": "s4mpp/blix-ui",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/s4mpp/blix-ui.git",
+                "reference": "607f257f5457bcea0d22fd58b9207b8ed22b25af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/s4mpp/blix-ui/zipball/607f257f5457bcea0d22fd58b9207b8ed22b25af",
+                "reference": "607f257f5457bcea0d22fd58b9207b8ed22b25af",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.9",
+                "laravel/pint": "^1.27",
+                "orchestra/testbench": "^9.0",
+                "rector/rector": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "S4mpp\\BlixUI\\BlixUIServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "S4mpp\\BlixUI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "s4mpp",
+                    "email": "s4mpp.dev2@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple and reusable UI library for Laravel",
+            "homepage": "https://github.com/s4mpp/blix-ui",
+            "keywords": [
+                "blix-ui",
+                "s4mpp"
+            ],
+            "support": {
+                "issues": "https://github.com/s4mpp/blix-ui/issues",
+                "source": "https://github.com/s4mpp/blix-ui/tree/v1.0.7"
+            },
+            "time": "2026-03-31T01:02:42+00:00"
         },
         {
             "name": "symfony/clock",

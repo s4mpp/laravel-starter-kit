@@ -6,44 +6,51 @@
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
-@source '../../vendor/s4mpp/blix-ui/views/*.blade.php';
-@source '../../vendor/s4mpp/backline/views/*.blade.php';
+@source '../../vendor/s4mpp/blix-ui/views/**/*.blade.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'Readex Pro', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@layer base {
-    .backline-input,
+
+@layer components
+{
     .form-input {
         @apply rounded-lg border-gray-300 bg-white text-gray-800
-            placeholder:text-gray-400
-           
+        placeholder:text-gray-400;
     }
 
-    .backline-btn,
     .btn {
         @apply rounded-lg text-white border-transparent
-            hover:bg-blue-400;
+            hover:bg-indigo-400 text-center transition-colors;
     }
 
-    .btn.btn-primary,
-    .backline-btn-primary {
-        @apply bg-blue-500 hover:bg-blue-400
-            
-    }
-
-    .form-input,
-    .backline-input,
-    .btn.btn-primary
-    .btn.btn-default {
-        @apply focus:border-blue-400 focus:ring-3 focus:ring-blue-500/25 transition duration-150 ease-in-out;;
+    .btn.btn-primary {
+        @apply bg-indigo-500 hover:bg-indigo-400;
     }
 
     .btn-default {
-        @apply bg-white border-gray-300 text-gray-700 hover:bg-gray-100
+        @apply bg-white border-gray-300 text-gray-700 hover:bg-gray-100;
+    }
+
+    .btn.btn-success {
+        @apply bg-green-700 hover:bg-green-600;
+    }
+
+    .btn.btn-warning {
+        @apply bg-orange-500 hover:bg-orange-400;
+    }
+
+    .btn.btn-danger {
+        @apply bg-red-500 hover:bg-red-400;
+    }
+
+    .form-input,
+    .btn.btn-primary,
+    .btn.btn-default {
+        @apply focus:border-indigo-400 focus:ring-3 focus:ring-indigo-500/25 transition duration-150 ease-in-out;
     }
 }
