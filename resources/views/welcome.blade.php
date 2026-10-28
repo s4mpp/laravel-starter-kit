@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="inline-flex mt-6 gap-6">
-			<x-blix::ui.link class="btn btn-primary" target="_blank" href="/telescope">TELESCOPE <i class="fa fa-arrow-right"></i> </x-blix::ui.link>
+			<a class="btn btn-primary px-4 py-2" target="_blank" href="/telescope">TELESCOPE <i class="fa fa-arrow-right"></i> </a>
 		</div>
 	</div>
 @endsection

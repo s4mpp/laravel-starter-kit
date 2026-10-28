@@ -6,7 +6,6 @@
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
-@source '../../vendor/s4mpp/blix-ui/views/**/*.blade.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
